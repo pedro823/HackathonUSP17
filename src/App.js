@@ -16,7 +16,7 @@ class App extends Component {
             </p>
 
             </div>
-            <div className="filter-container">.</div>
+            <div className="filter-container"></div>
         </div>
       </div>
     );
