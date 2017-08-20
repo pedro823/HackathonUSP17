@@ -14,6 +14,10 @@ body{
     border-radius: 5px;
 }
 
+.nav-link {
+  color: #fffff5;
+}
+
 .post-tag{
 
     background-color: #e8e8e8;

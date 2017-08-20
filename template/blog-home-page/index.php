@@ -99,26 +99,26 @@
                             <a href="#" class="list-group-item">Universidades <i class="fa fa-plus" aria-hidden="true"></i></a>
                             <div class="list-group-item box-hidden">
                                 <div class="checkbox">
-                                    <input id="USP" type="checkbox">
-                                    <label for="USP">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
                                         USP
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="UNESP" type="checkbox">
-                                    <label for="UNESP">
+                                    <input id="checkbox2" type="checkbox">
+                                    <label for="checkbox2">
                                         UNESP
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="UNICAMP" type="checkbox">
-                                    <label for="UNICAMP">
+                                    <input id="checkbox3" type="checkbox">
+                                    <label for="checkbox3">
                                         UNICAMP
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="UFSCAR" type="checkbox">
-                                    <label for="UFSCAR">
+                                    <input id="checkbox4" type="checkbox">
+                                    <label for="checkbox4">
                                         UFSCAR
                                     </label>
                                 </div>
@@ -126,15 +126,15 @@
                             <a href="#" class="list-group-item">Área de Conhecimento <i class="fa fa-plus" aria-hidden="true"></i></a>
                             <div class="list-group-item box-hidden">
                                 <div class="checkbox">
-                                    <input id="CA" type="checkbox">
-                                    <label for="CA">
+                                    <input id="checkbox5" type="checkbox">
+                                    <label for="checkbox5">
                                         Ciências Agrárias
                                     </label>
                                 </div>
 
                                 <div class="checkbox">
-                                    <input id="CB" type="checkbox">
-                                    <label for="CB">
+                                    <input id="checkbox6" type="checkbox">
+                                    <label for="checkbox6">
                                         Ciências Biológicas
                                     </label>
                                 </div>
@@ -447,18 +447,6 @@
             $(function(){
                 $("#navload").load("nav.php");
             });
-    </script>
-    <script>
-    var $btns = $('.btn').click(function() {
-      if (this.id == 'all') {
-        $('#parent > div').fadeIn(450);
-      } else {
-        var $el = $('.' + this.id).fadeIn(450);
-        $('#parent > div').not($el).hide();
-      }
-      $btns.removeClass('active');
-      $(this).addClass('active');
-    })
     </script>
 
 </body>
