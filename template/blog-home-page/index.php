@@ -216,7 +216,7 @@
                         </div>
                         <div class="post-container" id="post-container1">
                             <b>Título: </b> Nanopartículas lipídicas sólidas para a incorporação de trans-resveratrol: Desenvolvimento, caracterização físico-química, estudo de estabilidade e liberação in vitro <br>
-                            <b>Pesquisador:</b> <a href="user.html">Vilma Leyton </a> <br>
+                            <b>Pesquisador:</b> <a href="user.php">Vilma Leyton </a> <br>
                             <b>Vagas:</b> 5 <br>
                             <b>Instituição:</b> Universidade Estadual Paulista (UNESP)<br>
                             <b>Status:</b> Aberta<br>
