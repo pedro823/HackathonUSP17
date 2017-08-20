@@ -283,7 +283,7 @@
     </script>
     <script>
             $(function(){
-                $("#navload").load("nav.html");
+                $("#navload").load("nav.php");
             });
     </script>
 </body>

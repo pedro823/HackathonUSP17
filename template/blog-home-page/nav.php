@@ -3,7 +3,7 @@
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand nav-link" href="index.html">Conectoma</a>
+                <a class="navbar-brand nav-link" href="index.php">Conectoma</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,7 @@
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ranking das Universidades
                             </a>
                             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="profile.html">USP</a>
+                                <a class="dropdown-item" href="profile.php">USP</a>
                                 <a class="dropdown-item" href="" target="_blank">Unicamp</a>
                                 <a class="dropdown-item" href="" target="_blank">UNESP</a>
                                 <a class="dropdown-item" href="" target="_blank">UFSCAR</a>
