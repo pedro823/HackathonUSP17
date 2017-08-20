@@ -5,13 +5,13 @@ body{
 
 .post-wrapper{
 
-    border-radius: 5px;
     box-shadow: 0px 2px 10px #777777;
     background-color: #fcfcfc;
 }
 
 .post-container{
     padding: 10px;
+    border-radius: 5px;
 }
 
 .post-tag{
@@ -21,6 +21,10 @@ body{
     padding: 5px 10px;
     border-radius: 5px;
     line-height: 40px;
+}
+
+.post-tag:hover{
+    background-color: #ccc;
 }
 
 .post-title{
