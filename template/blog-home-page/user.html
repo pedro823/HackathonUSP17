@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Template styles -->
+    <style rel="stylesheet">
+
+            main {
+                padding-top: 3rem;
+                padding-bottom: 2rem;
+            }
+
+            .widget-wrapper {
+                padding-bottom: 2rem;
+                border-bottom: 1px solid #e0e0e0;
+                margin-bottom: 2rem;
+            }
+
+
+            .navbar {
+                background-color: #82b1ff;
+            }
+
+            footer.page-footer {
+                background-color: #82b1ff;
+                margin-top: 2rem;
+            }
+
+            .list-group-item.active {
+                background-color: #33b5e5;
+                border-color: #33b5e5
+            }
+
+            .list-group-item:not(.active) {
+                color: #222;
+            }
+
+            .list-group-item:not(.active):hover {
+                color: #666;
+            }
+            .card {
+                font-weight: 300;
+            }
+            .navbar .btn-group .dropdown-menu a:hover {
+                color: #000 !important;
+            }
+            .navbar .btn-group .dropdown-menu a:active {
+                color: #fff !important;
+            }
+    </style>
+
+</head>
+
+<body>
+
+
+  <header>
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+              <a class="navbar-brand" href="#">Conectoma</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">O que é uma IC?</a>
+                      </li>
+                      <li class="nav-item btn-group">
+                          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rankings
+                          </a>
+                          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="">Brasil</a>
+                              <a class="dropdown-item" href="https://www.timeshighereducation.com/world-university-rankings/latin-america-university-rankings-2017-results-out-now" target="_blank">América Latina</a>
+                              <a class="dropdown-item" href="https://www.timeshighereducation.com/world-university-rankings/2017/world-ranking#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/stats" target="_blank">Mundo</a>
+                          </div>
+                      </li>
+                      <li class="nav-item btn-group active">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Overview Universidades
+                            </a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item active" href="#">USP</a>
+                                <a class="dropdown-item" href="" target="_blank">Unicamp</a>
+                                <a class="dropdown-item" href="" target="_blank">UNESP</a>
+                                <a class="dropdown-item" href="" target="_blank">UFSCAR</a>
+                            </div>
+                        </li>
+                  </ul>
+                  <form class="form-inline">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Pesquise sua IC" aria-label="Pesquise sua IC">
+                  </form>
+              </div>
+          </div>
+      </nav>
+      <!--/.Navbar-->
+
+  </header>
+
+
+
+  <!-- SCRIPTS -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap dropdown -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script>
+      new WOW().init();
+      $(document).ready(function(){
+          $(function () {
+              $('.viewMoreButton').click(function () {
+                  $(this).prev('div').slideToggle();
+                  return true;
+              });
+          });
+      });
+      $('.list-group-item').click(function () {
+          $(this).next('div').slideToggle();
+          return true;
+      });
+  </script>
+  </body>
+</html>
