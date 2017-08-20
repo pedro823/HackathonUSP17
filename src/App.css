@@ -11,13 +11,9 @@
 
 .App-intro {
   font-size: large;
-  background-color: Crimson;
+  background-color: #82b1ff;
 }
 
 p {
-  color: black;
-}
-
-a {
-  color: blue;
+  color: #222222;
 }

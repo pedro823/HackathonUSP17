@@ -9,6 +9,8 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
+          
+          <div className = "topBar"></div>
           <div className="header-title"><img src="./icon.png"/>{this.props.title}</div>
       </div>
     );

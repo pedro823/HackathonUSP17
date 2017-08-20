@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: row;
     align-content: space-between;
-    width: 1500px;
+    width: 1200px;
     margin: auto;
     font-weight: bold;
     font-style: italic;
@@ -17,17 +17,18 @@ body {
 
 .content-container{
     flex: 1 100%;
-    background-color: blue;
+    background-color: #82b1ff;
     margin: 10px;
     height: 1200px;
 }
 
 .filter-container{
+    position: relative;
+    margin-right: -1000px;
     width: 350px;
     height: 700px;
     margin: 10px;
     align-items: flex-start;
-    background-color: #039BE5;
+    background-color: #82b1ff;
     order: 2;
-    
 }
