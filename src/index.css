@@ -6,7 +6,7 @@ body {
 
 .content{
     width: 700px;
-    margin: 0 auto;
+    margin: auto;
     font-weight: bold;
     font-style: italic;
 }
