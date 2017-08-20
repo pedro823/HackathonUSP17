@@ -66,6 +66,10 @@ body{
     display: none;
 }
 
+#navbarDropdownMenuLink {
+  color: #ffffff;
+}
+
 .box-hidden {
     display: none;
     font-family: "Roboto";
