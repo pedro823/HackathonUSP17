@@ -9,7 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css" />
 
-    <title>Material Design Bootstrap</title>
+    <title>Conectoma</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -74,53 +74,7 @@
 <body>
 <div id="navload"></div>
 
-  <header>
 
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container">
-              <a class="navbar-brand" href="#">Conectoma</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">O que é uma IC?</a>
-                      </li>
-                      <li class="nav-item btn-group">
-                          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rankings
-                          </a>
-                          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                              <a class="dropdown-item" href="">Brasil</a>
-                              <a class="dropdown-item" href="https://www.timeshighereducation.com/world-university-rankings/latin-america-university-rankings-2017-results-out-now" target="_blank">América Latina</a>
-                              <a class="dropdown-item" href="https://www.timeshighereducation.com/world-university-rankings/2017/world-ranking#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/stats" target="_blank">Mundo</a>
-                          </div>
-                      </li>
-                      <li class="nav-item btn-group active">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Overview Universidades
-                            </a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item active" href="#">USP</a>
-                                <a class="dropdown-item" href="" target="_blank">Unicamp</a>
-                                <a class="dropdown-item" href="" target="_blank">UNESP</a>
-                                <a class="dropdown-item" href="" target="_blank">UFSCAR</a>
-                            </div>
-                        </li>
-                  </ul>
-                  <form class="form-inline">
-                      <input class="form-control mr-sm-2" type="text" placeholder="Pesquise sua IC" aria-label="Pesquise sua IC">
-                  </form>
-              </div>
-          </div>
-      </nav>
-      <!--/.Navbar-->
-
-  </header>
   <div class="uni-header">
     <div class='container'>
       <div class='row'>
@@ -257,5 +211,10 @@
           return true;
       });
   </script>
+       <script>
+            $(function(){
+                $("#navload").load("nav.php");
+            });
+    </script>
   </body>
 </html>

@@ -88,11 +88,12 @@
                             </div>
                             <a href="#" class="list-group-item">Categoria <i class="fa fa-plus" aria-hidden="true"></i></a>
                             <div class="list-group-item box-hidden">
-                                <select class="form-control" id="sel1">
-                                    <option>Iniciação Científica</option>
-                                    <option>Mestrado</option>
-                                    <option>Doutorado</option>
-                                    <option>Doutorado Direto</option>
+                                <select class="form-control" name="version-select" id="version-select">
+                                    <option value="ALL">Todas</option>
+                                    <option value="IC">Iniciação Científica</option>
+                                    <option value="ME">Mestrado</option>
+                                    <option value="PHD">Doutorado</option>
+                                    <option value="PHDD">Doutorado Direto</option>
                                 </select>
                             </div>
                             <a href="#" class="list-group-item">Universidades <i class="fa fa-plus" aria-hidden="true"></i></a>
@@ -208,7 +209,7 @@
                 <!--Main column-->
                 <div class="col-lg-9">
                     <!--Post-->
-                    <div class="post-wrapper wow fadeIn USP" data-wow-delay="0.2s">
+                    <div class="post-wrapper wow fadeIn USP IC" data-wow-delay="0.2s">
                         <!--Post data-->
                         <div class="post-title green"> <!-- Area+cidade -->
                             <h1 class="h1-responsive font-bold">Saúde, Farmácia, Farmacotecnia </h1>
@@ -462,6 +463,16 @@
 
     $("#filterControls :checkbox").click(updateContentVisibility);
     updateContentVisibility();
+    </script>
+    <script>
+    $('#version-select').change(function(){
+        var val = $(this).val();
+        if(val == "ALL") { $(sections).show(); }
+        else { 
+        var lastThreeChars = val.substring(val.length - 3);
+        $(sections).hide();
+        $('div[class$="' + lastThreeChars + '"]').show();
+        }});
     </script>
 
 </body>
