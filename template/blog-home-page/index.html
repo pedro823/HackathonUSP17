@@ -133,27 +133,32 @@
                     <!--Post-->
                     <div class="post-wrapper wow fadeIn" data-wow-delay="0.2s">
                         <!--Post data-->
-                        <div class="post-title">
-                            <h1 class="h1-responsive font-bold">Nanopartículas lipídicas sólidas para a incorporação de trans-resveratrol: Desenvolvimento, caracterização físico-química, estudo de estabilidade e liberação in vitro<!--  <small class="text-muted">Secondary text</small> --></h1>
+                        <div class="post-title"> <!-- Area+cidade -->
+                            <h1 class="h1-responsive font-bold">Araraquara - Saúde, Farmácia, Farmacotecnia </h1>
+                            <!--  <small class="text-muted">Secondary text</small> -->
                         </div>
-                        <div class="post-container">
-
+                        <div class="post-container" id="post-container1">
+                            <b>Pesquisador:</b> Andressa Tardim Cruz <br>
+                            <b>Vagas:</b> Andressa Tardim Cruz <br>
+                            <b>Instituição:</b> Universidade Estadual Paulista (UNESP)<br>
+                            <b>Fomento:</b> FAPESP<br>
+                            <div class="viewmore" id="viewmore1">
+                                <b>Resumo:</b> As nanopartículas lipídicas sólidas (NLS) são dispersões formadas por partículas nanométricas que possuem alta estabilidade fisiológica e uma matriz composta por lipídeos sólidos. As NLS apresentam diversas vantagens frente aos demais sistemas de liberação, tais como a possibilidade de uma liberação prolongada, controlada e alvo-especifica de fármacos nelas encapsulados, o aumento da estabilidade dos fármacos, facilidade de produção em larga escala, entre outras. Entretanto, um dos maiores problemas encontrados no desenvolvimento das NLS é a sua instabilidade por longos períodos de tempo; há diversos relatos de expulsão do fármaco durante o período de estocagem. O trans-resveratrol (RES) é uma substância naturalmente encontrada em uvas, apresenta baixa solubilidade em água e alta permeabilidade da membrana. Embora existam vários estudos demonstrando os benefícios do RES para o tratamento do melanoma, outros deles demonstram a baixa biodisponibilidade dessa substância via oral em humanos, o que pode ser contornado pela sua administração cutânea. Dentro deste contexto, o objetivo deste trabalho é o desenvolvimento e estudo da estabilidade de NLS acrescidas de RES para administração cutânea, preparadas utilizando diferentes metodologias, entre elas Ultra Turrax a 11.000 a 24.000 rpm ou agitador magnético. Depois de homogeneizadas para a redução do tamanho das partículas, a pré-emulsão formada será sonicada e serão avaliadas diferentes condições de armazenamento, e sua influência na eficiência de encapsulação do RES e na estabilidade de formulações previamente desenvolvidas compostas por ácido esteárico (5%), fosfatidilcolina de soja (1,2%), poloxamer 407 (0,1%), polissorbato 80 (3,5%), glicerina (0,15%), phenonip (0,75%), etanol P.A. (1,25%), água milli-Q (quantidade suficiente para atingir a quantidade total de formulação) acrescidas ou não de brometo de cetiltrimetilamônio (0,45%). As formulações serão analisadas nos tempos 24 horas, 7, 15, 30, 60 e 90 dias após o preparo. Estas serão mantidas armazenadas em geladeira (4 ± 2 °C) durante todo o período de análise, e serão analisadas características organolépticas, determinação do pH e condutividade, determinação do diâmetro hidrodinâmico médio e potencial zeta. Espera-se, assim, ver a influência da técnica de preparação das NLS na estabilidade, eficiência de encapsulação e no perfil de liberação do RES.<br>
+                            </div>
+                            <a href="#" class="viewMoreButton">Saiba mais</a>
                             <br>
-
-                            <!--Post excerpt-->
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, officia omnis. Vero nihil neque dignissimos
-                                hic voluptas quisquam amet porro, similique libero ullam veritatis tempora cumque voluptates
-                                harum. Repellendus, impedit.</p>
-
+                            
                             <!--"Read more" button-->
-                            <button class="btn btn-info">Leia mais</button>
-                            <span class="post-tag">#hash</span>
-                            <span class="post-tag">#tag</span>
+                            
+                            <span class="post-tag">#nanopartículas lipídicas sólidas</span>
+                            <span class="post-tag">#nanotecnologia</span>
+                            <span class="post-tag">#estabilidade de medicamentos</span>
+                            <span class="post-tag">#resveratrol</span>
+                            <br>
+                            <br>
                         </div>
                     </div>
                     <!--/.Post-->
-
-                    <hr>
 
                     <!--Post-->
                     <div class="post-wrapper wow fadeIn" data-wow-delay="0.4s">
@@ -412,6 +417,14 @@
 
     <script>
         new WOW().init();
+        $(document).ready(function(){
+            $(function () {
+                $('.viewMoreButton').click(function () {
+                    $(this).prev('div').slideToggle();
+                    return true;
+                });
+            });
+        });
     </script>
 
 </body>
