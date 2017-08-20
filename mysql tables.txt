@@ -1,0 +1,31 @@
+create table post(
+id int not null primary key auto_increment,
+titulo text,
+pesquisador text,
+pesquisadorId int,
+vagas int,
+instituicao text,
+status text,
+dataInicio date,
+dataFim date,
+fomento text,
+requisitos text,
+tags text,
+cidade text,
+area text,
+resumo text
+);
+
+create table users(
+id int not null primary key auto_increment,
+nome text,
+email text,
+senha text,
+tipo text,
+universidade text
+);
+
+insert into users(nome, email, senha, tipo, universidade) values("Vilma Leyton", "vilmaleyton@gmail.com","vivilele","pesq","USP");
+insert into users(nome, email, senha, tipo, universidade) values("José Carneiro", "zecazao@gmail.com","jojocaca","aluno","USP");
+
+insert into posts(titulo,pesquisador,vagas,instituicao,status,dataInicio,dataFim, fomento, requisitos, tags, cidade, area, resumo) values();

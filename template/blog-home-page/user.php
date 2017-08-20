@@ -72,7 +72,7 @@
 </head>
 
 <body>
-
+<div id="navload"></div>
 
   <header>
 
@@ -121,8 +121,112 @@
       <!--/.Navbar-->
 
   </header>
+  <div class="uni-header">
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-1 col-sm-1'>
+
+        </div>
+        <div class='col-md-2 col-sm-2'>
+          <img src='img/vilma.jpg' class='user-icon' />
+        </div>
+        <div class='col-md-5 col-sm-5'>
+          <header class='user-title'>Vilma Leyton</header>
+          <p class='user-subtitle dark-text'>Professora de Toxicologia Forense - Universidade de São Paulo</p>
+        </div>
+        <div class='col-md-4 col-sm-4 uni-stats'>
+          <div style='text-align: centered; font-size: 200%; padding-bottom: 0.2em;'>
+            <b>Avaliação</b>
+          </div>
+          Avaliação dos alunos: <span style='font-size: 180%'><b>9.8</b></span>/10 <span style='font-size: 80%'>(7 avaliações)</span><br />
+          IC's em progresso: <span style='font-size: 130%'>2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='timeline-title'>
+    Timeline
+  </div>
+
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-2'></div>
+      <div class='col-md-8 col-sm-12'>
+        <div class='card padding'>
+          <div class="card-block container">
+            <h4 class="card-title card-no-img"><b>Detecting alcohol and illicit drugs in oral fluid samples collected from truck drivers in the state of Sao Paulo, Brazil</b><span style='text-align: right; color:#aaa;'> 2013</span></h4>
+            <p class="card-text">Mauricio Yonamine, Livia Rentas Sanches, Beatriz Aparecida Passos Bismara Paranhos, Rafael Menck de Almeida, Gabriel Andreuccetti, Vilma Leyton, em Traffic injury prevention 14 (2), 127-131</p>
+            <div class='status'>
+              <p style='text-align: centered'>
+                <b>Citações</b>: 36
+              </p>
+              <p style='text-align: centered'>
+                <span class='post-tag'>#Abuso de drogas</span>
+                <span class='post-tag'>#Acidentes de trânsito</span>
+                <span class='post-tag'>#Medicina legal</span>
+                <span class='post-tag'>#Drogas ilícitas</span>
+              </p>
+              <a href="#" class="btn btn-primary">Ver Trabalho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-2'></div>
+      <div class='col-md-8 col-sm-12'>
+        <div class='card padding'>
+          <div class="card-block container">
+            <h4 class="card-title card-no-img"><b>Drogas ilícitas e trânsito: problema pouco discutido no Brasil</b><span style='text-align: right; color:#aaa;'> 2008</span></h4>
+            <p class="card-text">JC Ponce, G Andreuccetti, MGS Jesus, V Leyton, DR MUÑOZ</p>
+            <div class='status'>
+              <p style='text-align: centered'>
+                <b>Citações</b>: 36
+              </p>
+              <p style='text-align: centered'>
+                <span class='post-tag'>#Abuso de drogas</span>
+                <span class='post-tag'>#Acidentes de trânsito</span>
+                <span class='post-tag'>#Medicina legal</span>
+                <span class='post-tag'>#Drogas ilícitas</span>
+              </p>
+              <a href="#" class="btn btn-primary">Ver Trabalho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-2'></div>
+      <div class='col-md-8 col-sm-12'>
+        <div class='card padding'>
+          <div class="card-block container">
+            <h4 class="card-title card-no-img"><b>Drug use by truck drivers in Brazil</b><span style='text-align: right; color:#aaa;'> 2003</span></h4>
+            <p class="card-text">OA Silva, JMD Greve, M Yonamine, V Leyton, em Drugs: education, prevention and policy 10 (2), 135-139</p>
+            <div class='status'>
+              <p style='text-align: centered'>
+                    <b>Citações:</b> 51
+              </p>
+              <p style='text-align: centered'>
+                <span class='post-tag'>#Abuso de drogas</span>
+                <span class='post-tag'>#Análise estatística</span>
+                <span class='post-tag'>#Toxicologia</span>
+                <span class='post-tag'>#Medicina legal</span>
+              </p>
+              <a href="#" class="btn btn-primary">Ver Trabalho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- SCRIPTS -->
 

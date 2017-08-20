@@ -78,7 +78,7 @@
                 <div class="col-lg-3">
 
                     <div class="widget-wrapper wow fadeIn" data-wow-delay="0.4s">
-                        <h5 class="font-bold">Filtros:</h4>
+                        <h5 class="font-bold">Filtros:</h5>
                         <div class="list-group">
                             <a href="#" class="list-group-item">Pesquisa <i class="fa fa-plus" aria-hidden="true"></i></a>
                             <div class="list-group-item box-hidden">
@@ -218,8 +218,8 @@
                         </div>
                         <div class="post-container" id="post-container1">
                             <b>Título: </b> Nanopartículas lipídicas sólidas para a incorporação de trans-resveratrol: Desenvolvimento, caracterização físico-química, estudo de estabilidade e liberação in vitro <br>
-                            <b>Pesquisador:</b> Andressa Tardim Cruz <br>
-                            <b>Vagas:</b> Andressa Tardim Cruz <br>
+                            <b>Pesquisador:</b> <a href="user.html">Vilma Leyton </a> <br>
+                            <b>Vagas:</b> 5 <br>
                             <b>Instituição:</b> Universidade Estadual Paulista (UNESP)<br>
                             <b>Status:</b> Aberta<br>
                             <div class="viewmore" id="viewmore1">
