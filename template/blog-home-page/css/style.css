@@ -51,13 +51,10 @@ body{
     background-color: #82b1ff;
 }
 
-#navbarDropdownMenuLink {
+#navbarDropdownMenuLink{
   color: #fff;
 }
 
 .viewmore{
-}
-
-.box-hidden {
     display: none;
 }
