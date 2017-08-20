@@ -90,3 +90,8 @@ body{
 .comment .btn{
     padding: 50px;
 }
+
+.fa-plus {
+    opacity: 0.5;
+    float: right;
+}
