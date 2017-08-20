@@ -10,14 +10,13 @@ class App extends Component {
       <div className="App">
         <Header title="IC Shortcut"/>
         <div className="content">
-            <Card header={<CardTitle reveal image={"img/office.jpg"} waves='light'/>}
-                title="Card Title"
-                reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-                <p><a href="#">This is a link</a></p>
-            </Card>
+            <div className="content-container">
             <p className="App-intro">
               Intro
             </p>
+
+            </div>
+            <div className="filter-container">.</div>
         </div>
       </div>
     );
