@@ -34,7 +34,7 @@
                             echo '<li class="nav-item btn-group"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-o" aria-hidden="true"></i>'.$_SESSION['user'].'</a><div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="configpage.php" target="_blank">Configurações</a><a class="dropdown-item" href="logout.php" target="_blank">Log Out</a></div></li>';
                           }
                           else{
-                            echo '<a class="nav-link" href="signin.php">Login</a>'; 
+                            echo '<a class="nav-link" href="signin.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>'; 
                           } 
                       ?>
                 </div>
