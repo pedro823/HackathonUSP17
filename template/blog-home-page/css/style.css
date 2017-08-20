@@ -24,11 +24,22 @@ body{
 }
 
 .post-title{
-    background-color: #A5D6A7;
     padding: 18px 15px;
     font-size: 12px;
     text-align: center;
-    color: #444444;
+    color: #FFFFFF;
+}
+
+.post-title .green{
+    background-color: #A5D6A7;
+}
+
+.post-title .red{
+    background-color: #E57373;
+}
+
+.post-title .blue{
+    background-color: #80DEEA;
 }
 
 .post-title h1{
