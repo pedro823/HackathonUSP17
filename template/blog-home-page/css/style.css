@@ -15,9 +15,9 @@ body{
 }
 
 .post-tag{
+
     background-color: #e8e8e8;
     margin-left: 5px;
-    margin-bottom: 5px;
     padding: 5px 10px;
     border-radius: 5px;
     line-height: 40px;
@@ -56,5 +56,8 @@ body{
 }
 
 .viewmore{
+}
+
+.box-hidden {
     display: none;
 }
