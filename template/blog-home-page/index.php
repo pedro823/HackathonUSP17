@@ -207,25 +207,28 @@
 
                 <!--/.Sidebar-->
                 <!--Main column-->
+                <div class="col-lg-9">
                 <?php
+                    error_reporting(-1);
+                    ini_set('display_errors',0);
+                    ini_set('display_startup_errors',0);
                     mysql_connect("localhost", "conectoma2", "abc123") or die("Erro na conexão sql!");
                     mysql_select_db("conectoma") or die ('Error updating database: '.mysql_error());
                     $sql="select * from posts";
                     $result=mysql_query($sql);
-                    $row = mysql_fetch_assoc($result);
                     $numRows = mysql_num_rows($result);
                     $out = "";
-                    while ($row = mysql_fetch_assoc($shots)){
+                    while ($row = mysql_fetch_assoc($result)){
                         $tagText = "";
                         $tags = split(":",$row["tags"]);
                         foreach($tags as $tag){
                             $tagText.='<span class="post-tag">#'.$tag.'</span>';
                         }
-                        $out.='<div class="col-lg-9"><div class="post-wrapper wow fadeIn USP" data-wow-delay="0.2s"><div class="post-title green"><h1 class="h1-responsive font-bold">'.$row["area"].'</h1></div>'
+                        $out.='<div class="post-wrapper wow fadeIn USP" data-wow-delay="0.2s"><div class="post-title green"><h1 class="h1-responsive font-bold">'.$row["area"].'</h1></div>'
                         .'<div class="post-container" id="post-container1">'
                         .'<b>Título: </b> '.$row["area"].'<br>'
                         .'<b>Cidade:</b> '.$row["cidade"].'<br>'
-                        .'<b>Pesquisador:</b> <a href="user.php">'.$row["pesquisador"].' <br>'
+                        .'<b>Pesquisador:</b> <a href="user.php">'.$row["pesquisador"].'</a> <br>'
                         .'<b>Vagas:</b>'.$row["vagas"].'<br>'
                         .'<b>Instituição:</b>'.$row["instituicao"].'<br>'
                         .'<b>Status:</b>'.$row["status"].'<br>'
@@ -238,8 +241,9 @@
                         .'</div><a href="javascript:void()" class="viewMoreButton">Saiba mais</a><br>'
                         .$tagText
                         .'<br><br>'
-                        .'<a class="viewMoreButtonBelow comment" href="javascript:void()"><h3>Comentários (1)</h3></a><div class="viewmore"><hr><div class="comment"><b>José Cardoso:</b> Achei interessante! Tenho interesse em participar.</div><br><form class="form-inline"><input class="mr-sm-2" type="text" placeholder="Comentar" aria-label="pesquisar"><br><input type="submit" name="submit" class="btn btn-info"></form></div><br></div></div><br><br>'
+                        .'<a class="viewMoreButtonBelow comment" href="javascript:void()"><h3>Comentários (1)</h3></a><div class="viewmore"><hr><div class="comment"><b>José Cardoso:</b> Achei interessante! Tenho interesse em participar.</div><br><form class="form-inline"><input class="mr-sm-2" type="text" placeholder="Comentar" aria-label="pesquisar"><br><input type="submit" name="submit" class="btn btn-info"></form></div><br></div></div><br><br>';
                     }
+                    echo $out;
 
                 ?>
                 
