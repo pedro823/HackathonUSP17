@@ -86,7 +86,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
+                      <li class="nav-item">
                           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
@@ -101,15 +101,16 @@
                               <a class="dropdown-item" href="https://www.timeshighereducation.com/world-university-rankings/2017/world-ranking#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/stats" target="_blank">Mundo</a>
                           </div>
                       </li>
-                      <li class="nav-item btn-group">
-                          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meu perfil
-                          </a>
-                          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                              <a class="dropdown-item" href="">Tags</a>
-                              <a class="dropdown-item" href="https://www.timeshighereducation.com/world-university-rankings/latin-america-university-rankings-2017-results-out-now" target="_blank">Configurações</a>
-                              <a class="dropdown-item" href="https://www.timeshighereducation.com/world-university-rankings/2017/world-ranking#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/stats" target="_blank">Log Out</a>
-                          </div>
-                      </li>
+                      <li class="nav-item btn-group active">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Overview Universidades
+                            </a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item active" href="#">USP</a>
+                                <a class="dropdown-item" href="" target="_blank">Unicamp</a>
+                                <a class="dropdown-item" href="" target="_blank">UNESP</a>
+                                <a class="dropdown-item" href="" target="_blank">UFSCAR</a>
+                            </div>
+                        </li>
                   </ul>
                   <form class="form-inline">
                       <input class="form-control mr-sm-2" type="text" placeholder="Pesquise sua IC" aria-label="Pesquise sua IC">
@@ -297,4 +298,35 @@
     </div>
   </div>
 
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+        new WOW().init();
+        $(document).ready(function(){
+            $(function () {
+                $('.viewMoreButton').click(function () {
+                    $(this).prev('div').slideToggle();
+                    return true;
+                });
+            });
+        });
+        $('.list-group-item').click(function () {
+                    $(this).next('div').slideToggle();
+                    return true;
+                });
+    </script>
 </body>
+</html>
