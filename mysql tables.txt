@@ -27,7 +27,7 @@ universidade text
 );
 
 create user conectoma2@localhost identified by "abc123";
-grant all privileges on *.* to conectoma2@localhost;
+grant all privileges on conectoma.* to conectoma2@localhost;
 
 insert into users(nome, email, senha, tipo, universidade) values("Vilma Leyton", "vilmaleyton@gmail.com","vivilele","pesq","USP");
 insert into users(nome, email, senha, tipo, universidade) values("Manuel Carneiro", "manu@gmail.com","jojocaca","aluno","USP");

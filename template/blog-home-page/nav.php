@@ -23,6 +23,9 @@
                                 <a class="dropdown-item" href="" target="_blank">UFSCAR</a>
                             </div>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pesquisadores.php">Pesquisadores</a>
+                        </li>
                         <?php
                         ini_set('display_errors',0);
                         ini_set('display_startup_errors',0);
