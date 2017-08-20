@@ -3,7 +3,7 @@
 
 <head>
 
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Conectoma</title>
@@ -90,7 +90,7 @@
                             <div class="list-group-item box-hidden">
                                 <select class="form-control" name="version-select" id="version-select">
                                     <option value="ALL">Todas</option>
-                                    <option value="IC">Inicia√ß√£o Cient√≠fica</option>
+                                    <option value="IC">IniciaÁ„o CientÌfica</option>
                                     <option value="ME">Mestrado</option>
                                     <option value="PHD">Doutorado</option>
                                     <option value="PHDD">Doutorado Direto</option>
@@ -123,43 +123,43 @@
                                     </label>
                                 </div>
                             </div>
-                            <a href="#" class="list-group-item">√Årea de Conhecimento <i class="fa fa-plus" aria-hidden="true"></i></a>
+                            <a href="#" class="list-group-item">¡rea de Conhecimento <i class="fa fa-plus" aria-hidden="true"></i></a>
                             <div class="list-group-item box-hidden">
                                 <div class="checkbox">
                                     <input id="checkbox5" value="CA" type="checkbox">
                                     <label for="checkbox5">
-                                        Ci√™ncias Agr√°rias
+                                        CiÍncias Agr·rias
                                     </label>
                                 </div>
 
                                 <div class="checkbox">
                                     <input id="checkbox6" value="CB" type="checkbox">
                                     <label for="checkbox6">
-                                        Ci√™ncias Biol√≥gicas
+                                        CiÍncias BiolÛgicas
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <input id="checkbox7" value="CE" type="checkbox">
                                     <label for="checkbox7">
-                                        Ci√™ncias Exatas e da Terra
+                                        CiÍncias Exatas e da Terra
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <input id="checkbox8" value="CH" type="checkbox">
                                     <label for="checkbox8">
-                                        Ci√™ncias Humanas
+                                        CiÍncias Humanas
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <input id="checkbox9" value="CSo" type="checkbox">
                                     <label for="checkbox9">
-                                        Ci√™ncias Sociais
+                                        CiÍncias Sociais
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <input id="checkbox10" value="CSa" type="checkbox">
                                     <label for="checkbox10">
-                                        Ci√™ncias da Sa√∫de
+                                        CiÍncias da Sa˙de
                                     </label>
                                 </div>
                                 <div class="checkbox">
@@ -171,7 +171,7 @@
                                 <div class="checkbox">
                                     <input id="checkbox12" value="LG" type="checkbox">
                                     <label for="checkbox12">
-                                        Lingu√≠stica, Letras e Artes
+                                        LinguÌstica, Letras e Artes
                                     </label>
                                 </div>
                             </div>
@@ -185,8 +185,8 @@
                         <br>
                         <div class="card">
                             <div class="card-body">
-                                <p><strong>Inscreva-se e receba informa√ß√µes sobre as ICs</strong></p>
-                                <p>Semanalmente o enviaremos not√≠cias sobre suas √°reas de interesse!</p>
+                                <p><strong>Inscreva-se e receba informaÁıes sobre as ICs</strong></p>
+                                <p>Semanalmente o enviaremos notÌcias sobre suas ·reas de interesse!</p>
                                 <div class="md-form">
                                     <i class="fa fa-user prefix"></i>
                                     <input type="text" id="form1" class="form-control">
@@ -212,7 +212,7 @@
                     error_reporting(-1);
                     ini_set('display_errors',0);
                     ini_set('display_startup_errors',0);
-                    mysql_connect("localhost", "conectoma2", "abc123") or die("Erro na conex√£o sql!");
+                    mysql_connect("localhost", "conectoma2", "abc123") or die("Erro na conex„o sql!");
                     mysql_select_db("conectoma") or die ('Error updating database: '.mysql_error());
                     $sql="select * from posts";
                     $result=mysql_query($sql);
@@ -226,22 +226,22 @@
                         }
                         $out.='<div class="post-wrapper wow fadeIn USP" data-wow-delay="0.2s"><div class="post-title green"><h1 class="h1-responsive font-bold">'.$row["area"].'</h1></div>'
                         .'<div class="post-container" id="post-container1">'
-                        .'<b>T√≠tulo: </b> '.$row["area"].'<br>'
+                        .'<b>TÌtulo: </b> '.$row["area"].'<br>'
                         .'<b>Cidade:</b> '.$row["cidade"].'<br>'
                         .'<b>Pesquisador:</b> <a href="user.php">'.$row["pesquisador"].'</a> <br>'
                         .'<b>Vagas:</b>'.$row["vagas"].'<br>'
-                        .'<b>Institui√ß√£o:</b>'.$row["instituicao"].'<br>'
+                        .'<b>InstituiÁ„o:</b>'.$row["instituicao"].'<br>'
                         .'<b>Status:</b>'.$row["status"].'<br>'
                         .'<div class="viewmore" id="viewmore1">'
-                        .'<b>Data de in√≠cio:</b>'.$row["dataInicio"].'<br>'
-                        .'<b>Data de t√©rmino:</b> '.$row["dataFim"].'<br>'
+                        .'<b>Data de inÌcio:</b>'.$row["dataInicio"].'<br>'
+                        .'<b>Data de tÈrmino:</b> '.$row["dataFim"].'<br>'
                         .'<b>Fomento:</b> FAPESP<br>'
-                        .'<b>Requisitos:</b> Conhecimentos profundos sobre intera√ß√µes de nanopart√≠culas.<br>'
+                        .'<b>Requisitos:</b> Conhecimentos profundos sobre interaÁıes de nanopartÌculas.<br>'
                         .'<b>Resumo:</b>'.$row["resumo"].'<br>'
                         .'</div><a href="javascript:void()" class="viewMoreButton">Saiba mais</a><br>'
                         .$tagText
                         .'<br><br>'
-                        .'<a class="viewMoreButtonBelow comment" href="javascript:void()"><h3>Coment√°rios (1)</h3></a><div class="viewmore"><hr><div class="comment"><b>Jos√© Cardoso:</b> Achei interessante! Tenho interesse em participar.</div><br><form class="form-inline"><input class="mr-sm-2" type="text" placeholder="Comentar" aria-label="pesquisar"><br><input type="submit" name="submit" class="btn btn-info"></form></div><br></div></div><br><br>';
+                        .'<a class="viewMoreButtonBelow comment" href="javascript:void()"><h3>Coment·rios (1)</h3></a><div class="viewmore"><hr><div class="comment"><b>JosÈ Cardoso:</b> Achei interessante! Tenho interesse em participar.</div><br><form class="form-inline"><input class="mr-sm-2" type="text" placeholder="Comentar" aria-label="pesquisar"><br><input type="submit" name="submit" class="btn btn-info"></form></div><br></div></div><br><br>';
                     }
                     echo $out;
 
@@ -253,34 +253,34 @@
                     <div class="post-wrapper wow fadeIn CA" data-wow-delay="0.2s">
                         <!--Post data-->
                         <div class="post-title red"> <!-- Area+cidade -->
-                            <h1 class="h1-responsive font-bold">Engenharias, Engenharia Sanit√°ria </h1>
+                            <h1 class="h1-responsive font-bold">Engenharias, Engenharia Sanit·ria </h1>
                             <!--  <small class="text-muted">Secondary text</small> -->
                         </div>
                         <div class="post-container" id="post-container1">
-                            <b>T√≠tulo: </b> Avalia√ß√£o da hidr√≥lise enzim√°tica (Aspergillus niger) do baga√ßo da cana-de-a√ß√∫car aplicado na produ√ß√£o biol√≥gica de hidrog√™nio empregando Clostridium butyricum como in√≥culo fermentativo<br>
+                            <b>TÌtulo: </b> AvaliaÁ„o da hidrÛlise enzim·tica (Aspergillus niger) do bagaÁo da cana-de-aÁ˙car aplicado na produÁ„o biolÛgica de hidrogÍnio empregando Clostridium butyricum como inÛculo fermentativo<br>
                             <b>Pesquisador:</b> Rafaela Arantes Stancari <br>
                             <b>Vagas:</b> 5 <br>
-                            <b>Institui√ß√£o:</b> Universidade de S√£o Paulo (USP). Escola de Engenharia de S√£o Carlos (EESC)<br>
+                            <b>InstituiÁ„o:</b> Universidade de S„o Paulo (USP). Escola de Engenharia de S„o Carlos (EESC)<br>
                             <b>Status:</b> Aberta<br>
                             <div class="viewmore" id="viewmore1">
-                                <b>Data de in√≠cio:</b> 01/09/2017<br>
-                                <b>Data de t√©rmino:</b> 31/08/2018<br>
+                                <b>Data de inÌcio:</b> 01/09/2017<br>
+                                <b>Data de tÈrmino:</b> 31/08/2018<br>
                                 <b>Fomento:</b> FAPESP<br>
-                                <b>Resumo:</b> As nanopart√≠culas lip√≠dicas s√≥lidas (NLS) s√£o dispers√µes formadas por part√≠culas nanom√©tricas que possuem alta estabilidade fisiol√≥gica e uma matriz composta por lip√≠deos s√≥lidos. As NLS apresentam diversas vantagens frente aos demais sistemas de libera√ß√£o, tais como a possibilidade de uma libera√ß√£o prolongada, controlada e alvo-especifica de f√°rmacos nelas encapsulados, o aumento da estabilidade dos f√°rmacos, facilidade de produ√ß√£o em larga escala, entre outras. Entretanto, um dos maiores problemas encontrados no desenvolvimento das NLS √© a sua instabilidade por longos per√≠odos de tempo; h√° diversos relatos de expuls√£o do f√°rmaco durante o per√≠odo de estocagem. O trans-resveratrol (RES) √© uma subst√¢ncia naturalmente encontrada em uvas, apresenta baixa solubilidade em √°gua e alta permeabilidade da membrana. Embora existam v√°rios estudos demonstrando os benef√≠cios do RES para o tratamento do melanoma, outros deles demonstram a baixa biodisponibilidade dessa subst√¢ncia via oral em humanos, o que pode ser contornado pela sua administra√ß√£o cut√¢nea. Dentro deste contexto, o objetivo deste trabalho √© o desenvolvimento e estudo da estabilidade de NLS acrescidas de RES para administra√ß√£o cut√¢nea, preparadas utilizando diferentes metodologias, entre elas Ultra Turrax a 11.000 a 24.000 rpm ou agitador magn√©tico. Depois de homogeneizadas para a redu√ß√£o do tamanho das part√≠culas, a pr√©-emuls√£o formada ser√° sonicada e ser√£o avaliadas diferentes condi√ß√µes de armazenamento, e sua influ√™ncia na efici√™ncia de encapsula√ß√£o do RES e na estabilidade de formula√ß√µes previamente desenvolvidas compostas por √°cido este√°rico (5%), fosfatidilcolina de soja (1,2%), poloxamer 407 (0,1%), polissorbato 80 (3,5%), glicerina (0,15%), phenonip (0,75%), etanol P.A. (1,25%), √°gua milli-Q (quantidade suficiente para atingir a quantidade total de formula√ß√£o) acrescidas ou n√£o de brometo de cetiltrimetilam√¥nio (0,45%). As formula√ß√µes ser√£o analisadas nos tempos 24 horas, 7, 15, 30, 60 e 90 dias ap√≥s o preparo. Estas ser√£o mantidas armazenadas em geladeira (4 ¬± 2 ¬∞C) durante todo o per√≠odo de an√°lise, e ser√£o analisadas caracter√≠sticas organol√©pticas, determina√ß√£o do pH e condutividade, determina√ß√£o do di√¢metro hidrodin√¢mico m√©dio e potencial zeta. Espera-se, assim, ver a influ√™ncia da t√©cnica de prepara√ß√£o das NLS na estabilidade, efici√™ncia de encapsula√ß√£o e no perfil de libera√ß√£o do RES.<br>
+                                <b>Resumo:</b> As nanopartÌculas lipÌdicas sÛlidas (NLS) s„o dispersıes formadas por partÌculas nanomÈtricas que possuem alta estabilidade fisiolÛgica e uma matriz composta por lipÌdeos sÛlidos. As NLS apresentam diversas vantagens frente aos demais sistemas de liberaÁ„o, tais como a possibilidade de uma liberaÁ„o prolongada, controlada e alvo-especifica de f·rmacos nelas encapsulados, o aumento da estabilidade dos f·rmacos, facilidade de produÁ„o em larga escala, entre outras. Entretanto, um dos maiores problemas encontrados no desenvolvimento das NLS È a sua instabilidade por longos perÌodos de tempo; h· diversos relatos de expuls„o do f·rmaco durante o perÌodo de estocagem. O trans-resveratrol (RES) È uma subst‚ncia naturalmente encontrada em uvas, apresenta baixa solubilidade em ·gua e alta permeabilidade da membrana. Embora existam v·rios estudos demonstrando os benefÌcios do RES para o tratamento do melanoma, outros deles demonstram a baixa biodisponibilidade dessa subst‚ncia via oral em humanos, o que pode ser contornado pela sua administraÁ„o cut‚nea. Dentro deste contexto, o objetivo deste trabalho È o desenvolvimento e estudo da estabilidade de NLS acrescidas de RES para administraÁ„o cut‚nea, preparadas utilizando diferentes metodologias, entre elas Ultra Turrax a 11.000 a 24.000 rpm ou agitador magnÈtico. Depois de homogeneizadas para a reduÁ„o do tamanho das partÌculas, a prÈ-emuls„o formada ser· sonicada e ser„o avaliadas diferentes condiÁıes de armazenamento, e sua influÍncia na eficiÍncia de encapsulaÁ„o do RES e na estabilidade de formulaÁıes previamente desenvolvidas compostas por ·cido este·rico (5%), fosfatidilcolina de soja (1,2%), poloxamer 407 (0,1%), polissorbato 80 (3,5%), glicerina (0,15%), phenonip (0,75%), etanol P.A. (1,25%), ·gua milli-Q (quantidade suficiente para atingir a quantidade total de formulaÁ„o) acrescidas ou n„o de brometo de cetiltrimetilamÙnio (0,45%). As formulaÁıes ser„o analisadas nos tempos 24 horas, 7, 15, 30, 60 e 90 dias apÛs o preparo. Estas ser„o mantidas armazenadas em geladeira (4 ± 2 ∞C) durante todo o perÌodo de an·lise, e ser„o analisadas caracterÌsticas organolÈpticas, determinaÁ„o do pH e condutividade, determinaÁ„o do di‚metro hidrodin‚mico mÈdio e potencial zeta. Espera-se, assim, ver a influÍncia da tÈcnica de preparaÁ„o das NLS na estabilidade, eficiÍncia de encapsulaÁ„o e no perfil de liberaÁ„o do RES.<br>
                             </div>
                             <a href="javascript:void()" class="viewMoreButton">Saiba mais</a>
                             <br>
 
                             <!--"Read more" button-->
 
-                            <span class="post-tag">#baga√ßo de cana-de-a√ß√∫car</span>
+                            <span class="post-tag">#bagaÁo de cana-de-aÁ˙car</span>
                             <span class="post-tag">#clostridium</span>
                             <span class="post-tag">#fungos</span>
-                            <span class="post-tag">#hidr√≥lise enzim√°tica</span>
-                            <span class="post-tag">#tratamento biol√≥gico</span>
+                            <span class="post-tag">#hidrÛlise enzim·tica</span>
+                            <span class="post-tag">#tratamento biolÛgico</span>
                             <span class="post-tag">#aspergillus niger</span>
-                            <span class="post-tag">#reatores anaer√≥bios</span>
-                            <span class="post-tag">#fermenta√ß√£o</span>
+                            <span class="post-tag">#reatores anaerÛbios</span>
+                            <span class="post-tag">#fermentaÁ„o</span>
                             <br>
                             <br>
                         </div>
@@ -292,20 +292,20 @@
                     <div class="post-wrapper wow fadeIn" data-wow-delay="0.2s">
                         <!--Post data-->
                         <div class="post-title blue"> <!-- Area+cidade -->
-                            <h1 class="h1-responsive font-bold">Ci√™ncias Humanas, Filosofia </h1>
+                            <h1 class="h1-responsive font-bold">CiÍncias Humanas, Filosofia </h1>
                             <!--  <small class="text-muted">Secondary text</small> -->
                         </div>
                         <div class="post-container" id="post-container1">
-                            <b>T√≠tulo: </b> Walter Benjamin e o conceito de modernidade nos ensaios sobre Baudelaire<br>
-                            <b>Pesquisador:</b> Luiz S√©rgio Repa <br>
+                            <b>TÌtulo: </b> Walter Benjamin e o conceito de modernidade nos ensaios sobre Baudelaire<br>
+                            <b>Pesquisador:</b> Luiz SÈrgio Repa <br>
                             <b>Vagas:</b> 1 <br>
-                            <b>Institui√ß√£o:</b> Universidade de S√£o Paulo (USP). Faculdade de Filosofia, Letras e Ci√™ncias Humanas (FFLCH)<br>
+                            <b>InstituiÁ„o:</b> Universidade de S„o Paulo (USP). Faculdade de Filosofia, Letras e CiÍncias Humanas (FFLCH)<br>
                             <b>Status:</b> Aberta<br>
                             <div class="viewmore" id="viewmore1">
-                                <b>Data de in√≠cio:</b> 01/09/2017<br>
-                                <b>Data de t√©rmino:</b> 31/08/2018<br>
+                                <b>Data de inÌcio:</b> 01/09/2017<br>
+                                <b>Data de tÈrmino:</b> 31/08/2018<br>
                                 <b>Fomento:</b> FAPESP<br>
-                                <b>Resumo:</b> O presente projeto busca definir os contornos e a especificidade do conceito de modernidade na obra de Walter Benjamin, delineados na d√©cada de 1930, sobretudo nos ensaios sobre o poeta franc√™s Charles Baudelaire. Trata-se de buscar a constela√ß√£o em que se configura o conceito de modernidade em ""A Paris do Segundo Imp√©rio na obra de Baudelaire"" (1938) e em ""Sobre alguns motivos na obra de Baudelaire"" (1939). Busca-se determinar as inflex√µes pr√≥prias que esse conceito assume em cada texto, lan√ßando m√£o, sempre que necess√°rio, de outras obras fundamentais do autor e da ampla tradi√ß√£o na qual ele se insere, a Teoria Cr√≠tica e suas grandes linhas de pensamento. Desse modo, privilegia-se aqui aqueles momentos da obra de Benjamin em que o conceito de modernidade √© enfaticamente nomeado, sobretudo no primeiro ensaio sobre Baudelaire. Ao mesmo tempo, mostra-se indispens√°vel que a busca do conceito de modernidade leve em conta o segundo ensaio sobre Baudelaire, uma vez que este, al√©m de tratar-se de uma revis√£o do primeiro texto a pedido do Instituto de Pesquisa Social, apresenta o conceito de modernidade num arranjo constelacional novo, integrando e reelaborando tanto elementos do texto de 1938, quanto temas de outras obras da d√©cada de 1930.<br>
+                                <b>Resumo:</b> O presente projeto busca definir os contornos e a especificidade do conceito de modernidade na obra de Walter Benjamin, delineados na dÈcada de 1930, sobretudo nos ensaios sobre o poeta francÍs Charles Baudelaire. Trata-se de buscar a constelaÁ„o em que se configura o conceito de modernidade em ""A Paris do Segundo ImpÈrio na obra de Baudelaire"" (1938) e em ""Sobre alguns motivos na obra de Baudelaire"" (1939). Busca-se determinar as inflexıes prÛprias que esse conceito assume em cada texto, lanÁando m„o, sempre que necess·rio, de outras obras fundamentais do autor e da ampla tradiÁ„o na qual ele se insere, a Teoria CrÌtica e suas grandes linhas de pensamento. Desse modo, privilegia-se aqui aqueles momentos da obra de Benjamin em que o conceito de modernidade È enfaticamente nomeado, sobretudo no primeiro ensaio sobre Baudelaire. Ao mesmo tempo, mostra-se indispens·vel que a busca do conceito de modernidade leve em conta o segundo ensaio sobre Baudelaire, uma vez que este, alÈm de tratar-se de uma revis„o do primeiro texto a pedido do Instituto de Pesquisa Social, apresenta o conceito de modernidade num arranjo constelacional novo, integrando e reelaborando tanto elementos do texto de 1938, quanto temas de outras obras da dÈcada de 1930.<br>
                             </div>
                             <a href="javascript:void()" class="viewMoreButton">Saiba mais</a>
                             <br>
@@ -315,7 +315,7 @@
                             <span class="post-tag">#humanas</span>
                             <span class="post-tag">#filosofia</span>
                             <span class="post-tag">#modernidade</span>
-                            <span class="post-tag">#teoria cr√≠tica</span>
+                            <span class="post-tag">#teoria crÌtica</span>
                             <br>
                             <br>
                         </div>
