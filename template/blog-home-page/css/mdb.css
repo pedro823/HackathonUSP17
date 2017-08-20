@@ -19,7 +19,7 @@
  *
  * Support: http://mdbootstrap.com/forums/forum/support/
  *
- * Contact: office@mdbootstrap.com 
+ * Contact: office@mdbootstrap.com
  *
  * Atribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
  *
@@ -6660,7 +6660,7 @@ button:focus {
 
 .navbar.navbar-light .breadcrumb .nav-item .nav-link,
 .navbar.navbar-light .navbar-nav .nav-item .nav-link {
-  color: #000;
+  color: #fff;
   transition: 0.35s;
 }
 
@@ -7969,11 +7969,11 @@ body.scrollable {
 
 /*!
  * Waves v0.7.5
- * http://fian.my.id/Waves 
- * 
- * Copyright 2014-2016 Alfiana E. Sibuea and other contributors 
- * Released under the MIT license 
- * https://github.com/fians/Waves/blob/master/LICENSE 
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014-2016 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
+ * https://github.com/fians/Waves/blob/master/LICENSE
  */
 .waves-effect {
   position: relative;
