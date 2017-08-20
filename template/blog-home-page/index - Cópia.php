@@ -212,38 +212,58 @@
                     $sql="select * from posts";
                     $result=mysql_query($sql);
                     $row = mysql_fetch_assoc($result);
-                    $numRows = mysql_num_rows($result);
-                    $out = "";
-                    while ($row = mysql_fetch_assoc($shots)){
-                        $tagText = "";
-                        $tags = split(":",$row["tags"]);
-                        foreach($tags as $tag){
-                            $tagText.='<span class="post-tag">#'.$tag.'</span>';
-                        }
-                        $out.='<div class="col-lg-9"><div class="post-wrapper wow fadeIn USP" data-wow-delay="0.2s"><div class="post-title green"><h1 class="h1-responsive font-bold">'.$row["area"].'</h1></div>'
-                        .'<div class="post-container" id="post-container1">'
-                        .'<b>Título: </b> '.$row["area"].'<br>'
-                        .'<b>Cidade:</b> '.$row["cidade"].'<br>'
-                        .'<b>Pesquisador:</b> <a href="user.php">'.$row["pesquisador"].' <br>'
-                        .'<b>Vagas:</b>'.$row["vagas"].'<br>'
-                        .'<b>Instituição:</b>'.$row["instituicao"].'<br>'
-                        .'<b>Status:</b>'.$row["status"].'<br>'
-                        .'<div class="viewmore" id="viewmore1">'
-                        .'<b>Data de início:</b>'.$row["dataInicio"].'<br>'
-                        .'<b>Data de término:</b> '.$row["dataFim"].'<br>'
-                        .'<b>Fomento:</b> FAPESP<br>'
-                        .'<b>Requisitos:</b> Conhecimentos profundos sobre interações de nanopartículas.<br>'
-                        .'<b>Resumo:</b>'.$row["resumo"].'<br>'
-                        .'</div><a href="javascript:void()" class="viewMoreButton">Saiba mais</a><br>'
-                        .$tagText
-                        .'<br><br>'
-                        .'<a class="viewMoreButtonBelow comment" href="javascript:void()"><h3>Comentários (1)</h3></a><div class="viewmore"><hr><div class="comment"><b>José Cardoso:</b> Achei interessante! Tenho interesse em participar.</div><br><form class="form-inline"><input class="mr-sm-2" type="text" placeholder="Comentar" aria-label="pesquisar"><br><input type="submit" name="submit" class="btn btn-info"></form></div><br></div></div><br><br>'
-                    }
+                    $out.=""
 
                 ?>
-                
+                <div class="col-lg-9">
+                    <!--Post-->
+                    <div class="post-wrapper wow fadeIn USP" data-wow-delay="0.2s">
+                        <!--Post data-->
+                        <div class="post-title green"> <!-- Area+cidade -->
+                            <h1 class="h1-responsive font-bold">Saúde, Farmácia, Farmacotecnia </h1>
+                            <!--  <small class="text-muted">Secondary text</small> -->
+                        </div>
+                        <div class="post-container" id="post-container1">
+                            <b>Título: </b> Nanopartículas lipídicas sólidas para a incorporação de trans-resveratrol: Desenvolvimento, caracterização físico-química, estudo de estabilidade e liberação in vitro <br>
+                            <b>Cidade:</b> São Paulo <br>
+                            <b>Pesquisador:</b> <a href="user.php">Vilma Leyton </a> <br>
+                            <b>Vagas:</b> 5 <br>
+                            <b>Instituição:</b> Universidade de São Paulo (USP)<br>
+                            <b>Status:</b> Aberta<br>
+                            <div class="viewmore" id="viewmore1">
+                                <b>Data de início:</b> 01/09/2017<br>
+                                <b>Data de término:</b> 31/08/2018<br>
+                                <b>Fomento:</b> FAPESP<br>
+                                <b>Requisitos:</b> Conhecimentos profundos sobre interações de nanopartículas.<br>
+                                <b>Resumo:</b> As nanopartículas lipídicas sólidas (NLS) são dispersões formadas por partículas nanométricas que possuem alta estabilidade fisiológica e uma matriz composta por lipídeos sólidos. As NLS apresentam diversas vantagens frente aos demais sistemas de liberação, tais como a possibilidade de uma liberação prolongada, controlada e alvo-especifica de fármacos nelas encapsulados, o aumento da estabilidade dos fármacos, facilidade de produção em larga escala, entre outras. Entretanto, um dos maiores problemas encontrados no desenvolvimento das NLS é a sua instabilidade por longos períodos de tempo; há diversos relatos de expulsão do fármaco durante o período de estocagem. O trans-resveratrol (RES) é uma substância naturalmente encontrada em uvas, apresenta baixa solubilidade em água e alta permeabilidade da membrana. Embora existam vários estudos demonstrando os benefícios do RES para o tratamento do melanoma, outros deles demonstram a baixa biodisponibilidade dessa substância via oral em humanos, o que pode ser contornado pela sua administração cutânea. Dentro deste contexto, o objetivo deste trabalho é o desenvolvimento e estudo da estabilidade de NLS acrescidas de RES para administração cutânea, preparadas utilizando diferentes metodologias, entre elas Ultra Turrax a 11.000 a 24.000 rpm ou agitador magnético. Depois de homogeneizadas para a redução do tamanho das partículas, a pré-emulsão formada será sonicada e serão avaliadas diferentes condições de armazenamento, e sua influência na eficiência de encapsulação do RES e na estabilidade de formulações previamente desenvolvidas compostas por ácido esteárico (5%), fosfatidilcolina de soja (1,2%), poloxamer 407 (0,1%), polissorbato 80 (3,5%), glicerina (0,15%), phenonip (0,75%), etanol P.A. (1,25%), água milli-Q (quantidade suficiente para atingir a quantidade total de formulação) acrescidas ou não de brometo de cetiltrimetilamônio (0,45%). As formulações serão analisadas nos tempos 24 horas, 7, 15, 30, 60 e 90 dias após o preparo. Estas serão mantidas armazenadas em geladeira (4 ± 2 °C) durante todo o período de análise, e serão analisadas características organolépticas, determinação do pH e condutividade, determinação do diâmetro hidrodinâmico médio e potencial zeta. Espera-se, assim, ver a influência da técnica de preparação das NLS na estabilidade, eficiência de encapsulação e no perfil de liberação do RES.<br>
+                            </div>
+                            <a href="javascript:void()" class="viewMoreButton">Saiba mais</a>
+                            <br>
+
+                            <!--"Read more" button-->
+
+                            <span class="post-tag">#nanopartículas lipídicas sólidas</span>
+                            <span class="post-tag">#nanotecnologia</span>
+                            <span class="post-tag">#estabilidade de medicamentos</span>
+                            <span class="post-tag">#resveratrol</span>
+                            <br>
+                            <br>
+                            <a class="viewMoreButtonBelow comment" href="javascript:void()"><h3>Comentários (1)</h3></a>
+                            <div class="viewmore">
+                                <hr>
+                                <div class="comment"><b>José Cardoso:</b> Achei interessante! Tenho interesse em participar.</div>
+                                    <br>
+                                    <form class="form-inline">
+                                        <input class="mr-sm-2" type="text" placeholder="Comentar" aria-label="pesquisar"><br>
+                                        <input type="submit" name="submit" class="btn btn-info">
+                                    </form>
+                                </div>
+                            <br>
+                        </div>
+                    </div>
                     <!--/.Post-->
-                    
+                    <br>
+                    <br>
                     <!--Post-->
                     <div class="post-wrapper wow fadeIn CA" data-wow-delay="0.2s">
                         <!--Post data-->
