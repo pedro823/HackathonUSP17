@@ -1,5 +1,6 @@
 create table post(
 id int not null primary key auto_increment,
+categoria text,
 titulo text,
 pesquisador text,
 pesquisadorId int,

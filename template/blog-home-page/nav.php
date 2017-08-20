@@ -23,6 +23,18 @@
                                 <a class="dropdown-item" href="" target="_blank">UFSCAR</a>
                             </div>
                         </li>
+                        <?php
+                        ini_set('display_errors',0);
+                        ini_set('display_startup_errors',0);
+                        error_reporting(-1);
+                          session_start();
+                          if($_SESSION["user"] == "Vilma Leyton"){
+                            echo '<li class="nav-item"><a class="nav-link" href="user.php">Meu perfil</a></li>';
+                          }
+                          if($_SESSION["tipo"] == "pesq"){
+                            echo '<li class="nav-item"><a class="nav-link" href="publicaric.php">Publicar IC</a></li>';
+                          }
+                        ?>
                     </ul>
                       
                       <?php  
