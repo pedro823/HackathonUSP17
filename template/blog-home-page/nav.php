@@ -25,14 +25,17 @@
                         </li>
                     </ul>
                       
-                      <?php /* 
+                      <?php  
+                        ini_set('display_errors',0);
+                        ini_set('display_startup_errors',0);
+                        error_reporting(-1);
                         session_start();//Inicia ou resume a sessão, para poder verificar se usuário ja está logado
                           if(isset ($_SESSION['user']) == true){ //Verifica se o usuário esta definido na sessao
                             echo '<li class="nav-item btn-group"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-o" aria-hidden="true"></i>'.$_SESSION['user'].'</a><div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="configpage.php" target="_blank">Configurações</a><a class="dropdown-item" href="logout.php" target="_blank">Log Out</a></div></li>';
                           }
                           else{
                             echo '<a class="nav-link" href="signin.php">Login</a>'; 
-                          } */
+                          } 
                       ?>
                 </div>
             </div>
