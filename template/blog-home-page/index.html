@@ -249,13 +249,103 @@
                 <div class="col-lg-4">
 
                     <div class="widget-wrapper wow fadeIn" data-wow-delay="0.4s">
-                        <h4 class="font-bold">Filtrar por:</h4>
-                        <br>
+                        <h4 class="font-bold">Filtros:</h4>
                         <div class="list-group">
-                            <a href="#" class="list-group-item">Universidades</a>
-                            <a href="#" class="list-group-item">Área de Conhecimento</a>
-                            <a href="#" class="list-group-item">Região</a>
-                            <a href="#" class="list-group-item">Tags</a>
+                            <a href="#" class="list-group-item" onclick="toggle_box(tags)">Pesquisa:</a>
+                            <div class="list-group-item box-hidden" id="tags">
+                                <form class="navbar-form navbar-left" role="search">
+                                        <input type="text" class="form-control" placeholder="">
+                                </form>
+                            </div>
+                            </div>
+                            <a href="#" class="list-group-item" onclick="toggle_box(categorias)">Categoria:</a>
+                            <div class="list-group-item box-hidden" id="categorias">
+                                <select class="form-control" id="sel1">
+                                    <option>Iniciação Científica</option>
+                                    <option>Mestrado</option>
+                                    <option>Doutorado</option>
+                                    <option>Doutorado Direto</option>
+                                </select>
+                            </div>
+                            <a href="#" class="list-group-item" onclick="toggle_box(universidades)">Universidades:</a>
+                            <div class="list-group-item box-hidden" id="universidades">
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        USP
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        UNESP
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        UNICAMP
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        UFSCAR
+                                    </label>
+                                </div>
+                            </div>
+                            <a href="#" class="list-group-item" onclick="toggle_box(areas)">Área de Conhecimento:</a>
+                            <div class="list-group-item box-hidden" id="areas">
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        Ciências Agrárias
+                                    </label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        Ciências Biológicas
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        Ciências Exatas e da Terra
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        Ciências Humanas
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        Ciências Sociais e Aplicadas
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        Ciências da Saúde
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        Engenharias
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        Linguística, Letras e Artes
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
