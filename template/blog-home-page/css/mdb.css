@@ -6660,7 +6660,7 @@ button:focus {
 
 .navbar.navbar-light .breadcrumb .nav-item .nav-link,
 .navbar.navbar-light .navbar-nav .nav-item .nav-link {
-  color: #fff;
+  color: #000;
   transition: 0.35s;
 }
 
