@@ -75,8 +75,7 @@
         <div class="container">
             <div class="row">
                 <!--Sidebar-->
-                <div class="col-lg-3">
-
+                <div class="col-lg-3" id="filterControls">
                     <div class="widget-wrapper wow fadeIn" data-wow-delay="0.4s">
                         <h5 class="font-bold">Filtros:</h5>
                         <div class="list-group">
@@ -99,26 +98,26 @@
                             <a href="#" class="list-group-item">Universidades <i class="fa fa-plus" aria-hidden="true"></i></a>
                             <div class="list-group-item box-hidden">
                                 <div class="checkbox">
-                                    <input id="USP" type="checkbox">
-                                    <label for="USP">
+                                    <input id="checkbox1" value="USP" type="checkbox">
+                                    <label for="checkbox1">
                                         USP
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="UNESP" type="checkbox">
-                                    <label for="UNESP">
+                                    <input id="checkbox2" value="UNESP"type="checkbox">
+                                    <label for="checkbox2">
                                         UNESP
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="UNICAMP" type="checkbox">
-                                    <label for="UNICAMP">
+                                    <input id="checkbox3" value="UNICAMP" type="checkbox">
+                                    <label for="checkbox3">
                                         UNICAMP
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="UFSCAR" type="checkbox">
-                                    <label for="UFSCAR">
+                                    <input id="checkbox4" value="UFSCAR" type="checkbox">
+                                    <label for="checkbox4">
                                         UFSCAR
                                     </label>
                                 </div>
@@ -126,50 +125,50 @@
                             <a href="#" class="list-group-item">Área de Conhecimento <i class="fa fa-plus" aria-hidden="true"></i></a>
                             <div class="list-group-item box-hidden">
                                 <div class="checkbox">
-                                    <input id="CA" type="checkbox">
-                                    <label for="CA">
+                                    <input id="checkbox5" value="CA" type="checkbox">
+                                    <label for="checkbox5">
                                         Ciências Agrárias
                                     </label>
                                 </div>
 
                                 <div class="checkbox">
-                                    <input id="CB" type="checkbox">
-                                    <label for="CB">
+                                    <input id="checkbox6" value="CB" type="checkbox">
+                                    <label for="checkbox6">
                                         Ciências Biológicas
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="checkbox7" type="checkbox">
+                                    <input id="checkbox7" value="CE" type="checkbox">
                                     <label for="checkbox7">
                                         Ciências Exatas e da Terra
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="checkbox8" type="checkbox">
+                                    <input id="checkbox8" value="CH" type="checkbox">
                                     <label for="checkbox8">
                                         Ciências Humanas
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="checkbox9" type="checkbox">
+                                    <input id="checkbox9" value="CSo" type="checkbox">
                                     <label for="checkbox9">
                                         Ciências Sociais
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="checkbox10" type="checkbox">
+                                    <input id="checkbox10" value="CSa" type="checkbox">
                                     <label for="checkbox10">
                                         Ciências da Saúde
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="checkbox11" type="checkbox">
+                                    <input id="checkbox11" value="ENG" type="checkbox">
                                     <label for="checkbox11">
                                         Engenharias
                                     </label>
                                 </div>
                                 <div class="checkbox">
-                                    <input id="checkbox12" type="checkbox">
+                                    <input id="checkbox12" value="LG" type="checkbox">
                                     <label for="checkbox12">
                                         Linguística, Letras e Artes
                                     </label>
@@ -208,9 +207,8 @@
                 <!--/.Sidebar-->
                 <!--Main column-->
                 <div class="col-lg-9">
-
                     <!--Post-->
-                    <div class="post-wrapper wow fadeIn" data-wow-delay="0.2s">
+                    <div class="post-wrapper wow fadeIn USP" data-wow-delay="0.2s">
                         <!--Post data-->
                         <div class="post-title green"> <!-- Area+cidade -->
                             <h1 class="h1-responsive font-bold">Saúde, Farmácia, Farmacotecnia </h1>
@@ -257,7 +255,7 @@
                     <br>
                     <br>
                     <!--Post-->
-                    <div class="post-wrapper wow fadeIn" data-wow-delay="0.2s">
+                    <div class="post-wrapper wow fadeIn CA" data-wow-delay="0.2s">
                         <!--Post data-->
                         <div class="post-title red"> <!-- Area+cidade -->
                             <h1 class="h1-responsive font-bold">São Carlos - Engenharias, Engenharia Sanitária </h1>
@@ -453,16 +451,21 @@
             });
     </script>
     <script>
-    var $btns = $('.btn').click(function() {
-      if (this.id == 'all') {
-        $('#parent > div').fadeIn(450);
-      } else {
-        var $el = $('.' + this.id).fadeIn(450);
-        $('#parent > div').not($el).hide();
-      }
-      $btns.removeClass('active');
-      $(this).addClass('active');
-    })
+    var sections = $('.post-wrapper');
+    function updateContentVisibility(){
+    var checked = $("#filterControls :checkbox:checked");
+    if(checked.length){
+        sections.hide();
+        checked.each(function(){
+            $("." + $(this).val()).show();
+        });
+    } else {
+        sections.show();
+    }
+}
+
+    $("#filterControls :checkbox").click(updateContentVisibility);
+    updateContentVisibility();
     </script>
 
 </body>
