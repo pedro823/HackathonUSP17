@@ -11,10 +11,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link" href="ic.php">O que é uma IC?</a>
+=======
+                            <a class="nav-link" href="#">Programas</a>
+>>>>>>> 4c82122bcfc5ec77b34ea2ee586d92c8d4c5b34c
                         </li>
                         <li class="nav-item btn-group">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ranking das Universidades
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ranking
                             </a>
                             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="profile.php">USP</a>
@@ -23,6 +27,21 @@
                                 <a class="dropdown-item" href="" target="_blank">UFSCAR</a>
                             </div>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pesquisadores.php">Pesquisadores</a>
+                        </li>
+                        <?php
+                        ini_set('display_errors',0);
+                        ini_set('display_startup_errors',0);
+                        error_reporting(-1);
+                          session_start();
+                          if($_SESSION["user"] == "Vilma Leyton"){
+                            echo '<li class="nav-item"><a class="nav-link" href="user.php">Meu perfil</a></li>';
+                          }
+                          if($_SESSION["tipo"] == "pesq"){
+                            echo '<li class="nav-item"><a class="nav-link" href="publicaric.php">Publicar IC</a></li>';
+                          }
+                        ?>
                     </ul>
 
                       <?php
