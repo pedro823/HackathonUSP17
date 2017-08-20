@@ -20,16 +20,25 @@ body{
     margin-bottom: 5px;
     padding: 5px 10px;
     border-radius: 5px;
+    line-height: 40px;
 }
 
 .post-title{
-    background-color: #81C784;
+    background-color: #A5D6A7;
     padding: 18px 15px;
     font-size: 12px;
     text-align: center;
-    color: #333333;
+    color: #444444;
 }
 
 .post-title h1{
     margin-bottom: -1px;
+}
+
+.btn{
+    background-color: #82b1ff;
+}
+
+.viewmore{
+    display: none;
 }
