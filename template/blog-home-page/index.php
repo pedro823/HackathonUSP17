@@ -83,7 +83,7 @@
                             <a href="#" class="list-group-item">Pesquisa <i class="fa fa-plus" aria-hidden="true"></i></a>
                             <div class="list-group-item box-hidden">
                                 <form class="form-inline">
-                                    <input type="text" placeholder="&#xF002;" style="font-family:Arial, FontAwesome">
+                                    <input type="text" name="search" placeholder="&#xF002;" style="font-family:Arial, FontAwesome">
                                 </form>
                             </div>
                             </div>
@@ -216,6 +216,15 @@
                     mysql_connect("localhost", "conectoma2", "abc123") or die("Erro na conexão sql!");
                     mysql_select_db("conectoma") or die ('Error updating database: '.mysql_error());
                     $sql="select * from posts";
+                    if(isset($_GET["search"])){
+                        $sql.=" where resumo LIKE %".$_GET["search"]."%";
+                    }
+                    $contato = "";
+                    session_start();
+                    if(isset($_SESSION["user"])){
+                        $contato = '<br><br><a href="mailto:contato@gmail.com">Entrar em contato</a>';
+                        $comment = '<form class="form-inline"><input class="mr-sm-2" type="text" placeholder="Comentar" aria-label="pesquisar"><br><input type="submit" name="submit" class="btn btn-info"></form>';
+                    }
                     $result=mysql_query($sql);
                     $numRows = mysql_num_rows($result);
                     $out = "";
@@ -236,13 +245,15 @@
                         .'<div class="viewmore" id="viewmore1">'
                         .'<b>Data de início:</b>'.$row["dataInicio"].'<br>'
                         .'<b>Data de término:</b> '.$row["dataFim"].'<br>'
-                        .'<b>Fomento:</b> FAPESP<br>'
+                        .'<b>Fomento:</b> '.$row["fomento"].'<br>'
+                        .'<b>Categoria:</b> '.$row["categoria"].'<br>'
                         .'<b>Requisitos:</b> Conhecimentos profundos sobre interações de nanopartículas.<br>'
                         .'<b>Resumo:</b>'.$row["resumo"].'<br>'
                         .'</div><a href="javascript:void()" class="viewMoreButton">Saiba mais</a><br>'
                         .$tagText
+                        .$contato
                         .'<br><br>'
-                        .'<a class="viewMoreButtonBelow comment" href="javascript:void()"><h3>Comentários (1)</h3></a><div class="viewmore"><hr><div class="comment"><b>José Cardoso:</b> Achei interessante! Tenho interesse em participar.</div><br><form class="form-inline"><input class="mr-sm-2" type="text" placeholder="Comentar" aria-label="pesquisar"><br><input type="submit" name="submit" class="btn btn-info"></form></div><br></div></div><br><br>';
+                        .'<a class="viewMoreButtonBelow comment" href="javascript:void()"><h3>Comentários (1)</h3></a><div class="viewmore"><hr><div class="comment"><b>José Cardoso:</b> Achei interessante! Tenho interesse em participar.</div><br>'.$comment.'</div><br></div></div><br><br>';
                     }
                     echo $out;
 
@@ -290,7 +301,7 @@
                     <br>
                     <br>
                     <!--Post-->
-                    <div class="post-wrapper wow fadeIn" data-wow-delay="0.2s">
+                    <div class="post-wrapper wow fadeIn " data-wow-delay="0.2s">
                         <!--Post data-->
                         <div class="post-title blue"> <!-- Area+cidade -->
                             <h1 class="h1-responsive font-bold">Ciências Humanas, Filosofia </h1>
@@ -298,7 +309,7 @@
                         </div>
                         <div class="post-container" id="post-container1">
                             <b>Título: </b> Walter Benjamin e o conceito de modernidade nos ensaios sobre Baudelaire<br>
-                            <b>Pesquisador:</b> Luiz Sérgio Repa <br>
+                            <b>Pesquisador:</b> <a href="user.php">Vilma Leyton </a><br>
                             <b>Vagas:</b> 1 <br>
                             <b>Instituição:</b> Universidade de São Paulo (USP). Faculdade de Filosofia, Letras e Ciências Humanas (FFLCH)<br>
                             <b>Status:</b> Aberta<br>
