@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>IC Shortcut</title>
+    <title>Conectoma</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="">
@@ -71,55 +71,7 @@
 </head>
 
 <body>
-
-
-    <header>
-
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">IC Shortcut</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">O que é uma IC?</a>
-                        </li>
-                        <li class="nav-item btn-group">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rankings
-                            </a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="">Brasil</a>
-                                <a class="dropdown-item" href="https://www.timeshighereducation.com/world-university-rankings/latin-america-university-rankings-2017-results-out-now" target="_blank">América Latina</a>
-                                <a class="dropdown-item" href="https://www.timeshighereducation.com/world-university-rankings/2017/world-ranking#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/stats" target="_blank">Mundo</a>
-                            </div>
-                        </li>
-                        <li class="nav-item btn-group">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meu perfil
-                            </a>
-                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="">Tags</a>
-                                <a class="dropdown-item" href="" target="_blank">Configurações</a>
-                                <a class="dropdown-item" href="" target="_blank">Log Out</a>
-                            </div>
-                        </li>
-                    </ul>
-                    
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Pesquise sua IC" aria-label="Pesquise sua IC">
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <!--/.Navbar-->
-
-    </header>
+   <div id="navload"></div>
 
     <main>
 
@@ -154,107 +106,7 @@
         </div>
 
     </main>
-    <footer class="page-footer center-on-small-only">
-        <div class="container-fluid">
-            <div class="row">
-                <!--First column-->
-                <div class="col-lg-3 col-md-6 ml-auto">
-                    <h5 class="title mb-3"><strong>About material design</strong></h5>
-                    <p>Material Design (codenamed Quantum Paper) is a design language developed by Google.</p>
-                    <p>Material Design for Bootstrap (MDB) is a powerful Material Design UI KIT for most popular HTML, CSS,
-                        and JS framework - Bootstrap.</p>
-                </div>
-                <!--/.First column-->
-                <hr class="w-100 clearfix d-sm-none">
-                <!--Second column-->
-                <div class="col-lg-2 col-md-6 ml-auto">
-                    <h5 class="title mb-3"><strong>First column</strong></h5>
-                    <ul>
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.Second column-->
-                <hr class="w-100 clearfix d-sm-none">
-                <!--Third column-->
-                <div class="col-lg-2 col-md-6 ml-auto">
-                    <h5 class="title mb-3"><strong>Second column</strong></h5>
-                    <ul>
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.Third column-->
-                <hr class="w-100 clearfix d-sm-none">
-                <!--Fourth column-->
-                <div class="col-lg-2 col-md-6 ml-auto">
-                    <h5 class="title mb-3"><strong>Third column</strong></h5>
-                    <ul>
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.Fourth column-->
-            </div>
-        </div>
-        <!--/.Footer links-->
-
-        <hr>
-
-        <!--Call to action-->
-        <div class="call-to-action">
-            <h4 class="mb-5">Material Design for Bootstrap</h4>
-            <ul>
-                <li>
-                    <h5>Get our UI KIT for free</h5>
-                </li>
-                <li><a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-info" rel="nofollow">Sign up!</a></li>
-                <li><a target="_blank" href="https://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default" rel="nofollow">Learn more</a></li>
-            </ul>
-        </div>
-        <!--/.Call to action-->
-
-        <!--Copyright-->
-        <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2015 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
-
-            </div>
-        </div>
-        <!--/.Copyright-->
-
-    </footer>
-    <!--/.Footer-->
+    <div id="footerload"></div>
 
 
     <!-- SCRIPTS -->
@@ -273,6 +125,16 @@
 
     <script>
         new WOW().init();
+    </script>
+       <script>
+            $(function(){
+                $("#navload").load("nav.php");
+            });
+    </script>
+    <script>
+            $(function(){
+                $("#footerload").load("footer.php");
+            });
     </script>
 
 </body>

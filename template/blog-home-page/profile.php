@@ -251,7 +251,7 @@
     </div>
   </div>
 
-
+  <div id="footerload"></div>
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
@@ -284,6 +284,11 @@
     <script>
             $(function(){
                 $("#navload").load("nav.php");
+            });
+    </script>
+    <script>
+            $(function(){
+                $("#footerload").load("footer.php");
             });
     </script>
 </body>

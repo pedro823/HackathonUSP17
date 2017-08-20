@@ -88,11 +88,12 @@
                             </div>
                             <a href="#" class="list-group-item">Categoria <i class="fa fa-plus" aria-hidden="true"></i></a>
                             <div class="list-group-item box-hidden">
-                                <select class="form-control" id="sel1">
-                                    <option>Iniciação Científica</option>
-                                    <option>Mestrado</option>
-                                    <option>Doutorado</option>
-                                    <option>Doutorado Direto</option>
+                                <select class="form-control" name="version-select" id="version-select">
+                                    <option value="ALL">Todas</option>
+                                    <option value="IC">Iniciação Científica</option>
+                                    <option value="ME">Mestrado</option>
+                                    <option value="PHD">Doutorado</option>
+                                    <option value="PHDD">Doutorado Direto</option>
                                 </select>
                             </div>
                             <a href="#" class="list-group-item">Universidades <i class="fa fa-plus" aria-hidden="true"></i></a>
@@ -354,47 +355,7 @@
     </div>
     </main>
 
-    <!--Footer-->
-    <footer class="page-footer center-on-small-only">
-
-        <!--Footer links-->
-        <div class="container-fluid">
-            <div class="row container-fluid">
-                <!--First column-->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="title mb-3"><strong>Sobre o Conectoma</strong></h5>
-                    <p>Conectoma surgiu a partir da necessidade de conectar alunos interessados a ICs à professores.</p>
-                    <p>Porque não criar em uma única plataforma uma ponte entre alunos e professores interessados em ICs? O Conectoma surge
-                    a partir desta necessidade. Conecte-se, faça ciência. </p>
-                </div>
-                <!--/.First column-->
-                <hr class="w-100 clearfix d-sm-none">
-                <!--Second column-->
-                <div class="col-lg-2 col-md-6 ml-auto">
-                    <h5 class="title mb-3"><strong>Informações adicionais</strong></h5>
-                    <ul>
-                        <li>
-                            <a href="http://lattes.cnpq.br/" target="_blank">Lattes</a>
-                        </li>
-                        <li>
-                            <a href="https://www.topuniversities.com/" target="_blank">Ranking Universitário</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.Second column-->
-                <hr class="w-100 clearfix d-sm-none">
-                <!--Third column-->
-                <!--Fourth column-->
-                <!--/.Fourth column-->
-            </div>
-        </div>
-        <!--Copyright-->
-        <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2017 Copyright: <a>conectoma.com.br</a>
-            </div>
-        </div>
-    </footer>
+    <div id="footerload"></div>
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
@@ -437,6 +398,11 @@
             });
     </script>
     <script>
+            $(function(){
+                $("#footerload").load("footer.php");
+            });
+    </script>
+    <script>
     var sections = $('.post-wrapper');
     function updateContentVisibility(){
     var checked = $("#filterControls :checkbox:checked");
@@ -452,6 +418,16 @@
 
     $("#filterControls :checkbox").click(updateContentVisibility);
     updateContentVisibility();
+    </script>
+    <script>
+    $('#version-select').change(function(){
+        var val = $(this).val();
+        if(val == "ALL") { $(sections).show(); }
+        else { 
+        var lastThreeChars = val.substring(val.length - 3);
+        $(sections).hide();
+        $('div[class$="' + lastThreeChars + '"]').show();
+        }});
     </script>
 
 </body>
