@@ -86,9 +86,20 @@ line-height: 40px;
 .uni-icon {
   padding-top: 0.5em;
   height: 12em;
-  width: auto;
+  width: 12em;
   border-radius: 50%;
   padding-bottom: 0.5em;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.user-icon {
+  padding: 0.5em;
+  height: 12em;
+  width: 12em;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .status {
@@ -102,6 +113,30 @@ line-height: 40px;
 .uni-title {
   padding-top: 0.5em;
   font-size: 300%;
+}
+
+.timeline-title {
+  text-align: center;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 250%;
+}
+
+.timeline {
+  position: relative;
+  width: 50%;
+  height: 500px;
+  border-left: thin dashed;
+  z-index: -2;
+}
+
+.card-no-img {
+  padding-top: 1em;
+}
+
+.user-title {
+  padding-top: 1.5em;
+  font-size: 200%;
 }
 
 .uni-stats {
