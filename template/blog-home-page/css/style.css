@@ -62,6 +62,8 @@ body{
 .btn{
     float: right;
     background-color: #000;
+
+    padding: 1px 10px;  
 }
 
 .viewmore{
@@ -75,4 +77,12 @@ body{
 .box-hidden {
     display: none;
     font-family: "Roboto";
+}
+
+.comment h3{
+    font-size: 20px;
+}
+
+.comment .btn{
+    padding: 50px; 
 }
