@@ -1,8 +1,16 @@
 .header-title {
     text-align: center;
-    background-color: grey;
     height: 120px;
     width: 100%;
     display: table-cell;
     vertical-align: middle;
+}
+
+.header {
+    text-align: center;
+    background-color: blue;
+    height: 120px;
+    width: 100%;
+    display: table;
+    box-shadow: 0px 5px 2px #888888;
 }
