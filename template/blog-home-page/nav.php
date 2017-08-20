@@ -11,11 +11,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-<<<<<<< HEAD
-                            <a class="nav-link" href="ic.php">O que é uma IC?</a>
-=======
                             <a class="nav-link" href="#">Programas</a>
->>>>>>> 4c82122bcfc5ec77b34ea2ee586d92c8d4c5b34c
                         </li>
                         <li class="nav-item btn-group">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ranking
