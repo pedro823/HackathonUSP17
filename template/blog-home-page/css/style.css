@@ -15,15 +15,21 @@ body{
 }
 
 .post-tag{
-
     background-color: #e8e8e8;
     margin-left: 5px;
+    margin-bottom: 5px;
     padding: 5px 10px;
     border-radius: 5px;
 }
 
 .post-title{
     background-color: #81C784;
-    padding: 20px;
+    padding: 18px 15px;
     font-size: 12px;
+    text-align: center;
+    color: #333333;
+}
+
+.post-title h1{
+    margin-bottom: -1px;
 }
