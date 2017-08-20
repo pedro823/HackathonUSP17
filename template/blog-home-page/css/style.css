@@ -4,16 +4,26 @@ body{
 }
 
 .post-wrapper{
-    padding: 20px;
+    
     border-radius: 5px;
     box-shadow: 0px 2px 10px #777777;
     background-color: #fcfcfc;
 }
 
+.post-container{
+    padding: 10px;
+}
+
 .post-tag{
 
-    background-color: #cecece;
+    background-color: #e8e8e8;
     margin-left: 5px;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.post-title{
+    background-color: #81C784;
+    padding: 20px;
+    font-size: 12px;
 }
