@@ -83,7 +83,7 @@
                             <a href="#" class="list-group-item">Pesquisa <i class="fa fa-plus" aria-hidden="true"></i></a>
                             <div class="list-group-item box-hidden">
                                 <form class="form-inline">
-                                    <input class="form-control" type="text" placeholder="" aria-label="pesquisar"> <i class="fa fa-search" aria-hidden="true"></i>
+                                    <input type="text" placeholder="&#xF002;" style="font-family:Arial, FontAwesome">
                                 </form>
                             </div>
                             </div>
