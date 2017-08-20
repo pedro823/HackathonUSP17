@@ -11,7 +11,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Programas</a>
+                            <a class="nav-link" href="ic.php">Programas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pesquisadores.php">Pesquisadores</a>
                         </li>
                         <li class="nav-item btn-group">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ranking
@@ -22,9 +25,6 @@
                                 <a class="dropdown-item" href="" target="_blank">UNESP</a>
                                 <a class="dropdown-item" href="" target="_blank">UFSCAR</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pesquisadores.php">Pesquisadores</a>
                         </li>
                         <?php
                         ini_set('display_errors',0);
