@@ -3839,11 +3839,7 @@ tbody.collapse.show {
   .list-group-item.disabled, .list-group-item:disabled {
     color: #868e96;
     background-color: #fff; }
-  .list-group-item.active {
-    z-index: 2;
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff; }
+
 
 .list-group-flush .list-group-item {
   border-right: 0;
