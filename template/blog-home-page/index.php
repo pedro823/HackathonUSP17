@@ -260,13 +260,13 @@
                     <div class="post-wrapper wow fadeIn" data-wow-delay="0.2s">
                         <!--Post data-->
                         <div class="post-title red"> <!-- Area+cidade -->
-                            <h1 class="h1-responsive font-bold">São Carlos - Engenharias, Engenharia Sanitária </h1>
+                            <h1 class="h1-responsive font-bold">Engenharias, Engenharia Sanitária </h1>
                             <!--  <small class="text-muted">Secondary text</small> -->
                         </div>
                         <div class="post-container" id="post-container1">
                             <b>Título: </b> Avaliação da hidrólise enzimática (Aspergillus niger) do bagaço da cana-de-açúcar aplicado na produção biológica de hidrogênio empregando Clostridium butyricum como inóculo fermentativo<br>
                             <b>Pesquisador:</b> Rafaela Arantes Stancari <br>
-                            <b>Vagas:</b> Andressa Tardim Cruz <br>
+                            <b>Vagas:</b> 5 <br>
                             <b>Instituição:</b> Universidade de São Paulo (USP). Escola de Engenharia de São Carlos (EESC)<br>
                             <b>Status:</b> Aberta<br>
                             <div class="viewmore" id="viewmore1">
@@ -299,34 +299,30 @@
                     <div class="post-wrapper wow fadeIn" data-wow-delay="0.2s">
                         <!--Post data-->
                         <div class="post-title blue"> <!-- Area+cidade -->
-                            <h1 class="h1-responsive font-bold">São Carlos - Engenharias, Engenharia Sanitária </h1>
+                            <h1 class="h1-responsive font-bold">Ciências Humanas, Filosofia </h1>
                             <!--  <small class="text-muted">Secondary text</small> -->
                         </div>
                         <div class="post-container" id="post-container1">
-                            <b>Título: </b> Avaliação da hidrólise enzimática (Aspergillus niger) do bagaço da cana-de-açúcar aplicado na produção biológica de hidrogênio empregando Clostridium butyricum como inóculo fermentativo<br>
-                            <b>Pesquisador:</b> Rafaela Arantes Stancari <br>
-                            <b>Vagas:</b> Andressa Tardim Cruz <br>
-                            <b>Instituição:</b> Universidade de São Paulo (USP). Escola de Engenharia de São Carlos (EESC)<br>
+                            <b>Título: </b> Walter Benjamin e o conceito de modernidade nos ensaios sobre Baudelaire<br>
+                            <b>Pesquisador:</b> Luiz Sérgio Repa <br>
+                            <b>Vagas:</b> 1 <br>
+                            <b>Instituição:</b> Universidade de São Paulo (USP). Faculdade de Filosofia, Letras e Ciências Humanas (FFLCH)<br>
                             <b>Status:</b> Aberta<br>
                             <div class="viewmore" id="viewmore1">
                                 <b>Data de início:</b> 01/09/2017<br>
                                 <b>Data de término:</b> 31/08/2018<br>
                                 <b>Fomento:</b> FAPESP<br>
-                                <b>Resumo:</b> As nanopartículas lipídicas sólidas (NLS) são dispersões formadas por partículas nanométricas que possuem alta estabilidade fisiológica e uma matriz composta por lipídeos sólidos. As NLS apresentam diversas vantagens frente aos demais sistemas de liberação, tais como a possibilidade de uma liberação prolongada, controlada e alvo-especifica de fármacos nelas encapsulados, o aumento da estabilidade dos fármacos, facilidade de produção em larga escala, entre outras. Entretanto, um dos maiores problemas encontrados no desenvolvimento das NLS é a sua instabilidade por longos períodos de tempo; há diversos relatos de expulsão do fármaco durante o período de estocagem. O trans-resveratrol (RES) é uma substância naturalmente encontrada em uvas, apresenta baixa solubilidade em água e alta permeabilidade da membrana. Embora existam vários estudos demonstrando os benefícios do RES para o tratamento do melanoma, outros deles demonstram a baixa biodisponibilidade dessa substância via oral em humanos, o que pode ser contornado pela sua administração cutânea. Dentro deste contexto, o objetivo deste trabalho é o desenvolvimento e estudo da estabilidade de NLS acrescidas de RES para administração cutânea, preparadas utilizando diferentes metodologias, entre elas Ultra Turrax a 11.000 a 24.000 rpm ou agitador magnético. Depois de homogeneizadas para a redução do tamanho das partículas, a pré-emulsão formada será sonicada e serão avaliadas diferentes condições de armazenamento, e sua influência na eficiência de encapsulação do RES e na estabilidade de formulações previamente desenvolvidas compostas por ácido esteárico (5%), fosfatidilcolina de soja (1,2%), poloxamer 407 (0,1%), polissorbato 80 (3,5%), glicerina (0,15%), phenonip (0,75%), etanol P.A. (1,25%), água milli-Q (quantidade suficiente para atingir a quantidade total de formulação) acrescidas ou não de brometo de cetiltrimetilamônio (0,45%). As formulações serão analisadas nos tempos 24 horas, 7, 15, 30, 60 e 90 dias após o preparo. Estas serão mantidas armazenadas em geladeira (4 ± 2 °C) durante todo o período de análise, e serão analisadas características organolépticas, determinação do pH e condutividade, determinação do diâmetro hidrodinâmico médio e potencial zeta. Espera-se, assim, ver a influência da técnica de preparação das NLS na estabilidade, eficiência de encapsulação e no perfil de liberação do RES.<br>
+                                <b>Resumo:</b> O presente projeto busca definir os contornos e a especificidade do conceito de modernidade na obra de Walter Benjamin, delineados na década de 1930, sobretudo nos ensaios sobre o poeta francês Charles Baudelaire. Trata-se de buscar a constelação em que se configura o conceito de modernidade em ""A Paris do Segundo Império na obra de Baudelaire"" (1938) e em ""Sobre alguns motivos na obra de Baudelaire"" (1939). Busca-se determinar as inflexões próprias que esse conceito assume em cada texto, lançando mão, sempre que necessário, de outras obras fundamentais do autor e da ampla tradição na qual ele se insere, a Teoria Crítica e suas grandes linhas de pensamento. Desse modo, privilegia-se aqui aqueles momentos da obra de Benjamin em que o conceito de modernidade é enfaticamente nomeado, sobretudo no primeiro ensaio sobre Baudelaire. Ao mesmo tempo, mostra-se indispensável que a busca do conceito de modernidade leve em conta o segundo ensaio sobre Baudelaire, uma vez que este, além de tratar-se de uma revisão do primeiro texto a pedido do Instituto de Pesquisa Social, apresenta o conceito de modernidade num arranjo constelacional novo, integrando e reelaborando tanto elementos do texto de 1938, quanto temas de outras obras da década de 1930.<br>
                             </div>
                             <a href="javascript:void()" class="viewMoreButton">Saiba mais</a>
                             <br>
 
                             <!--"Read more" button-->
 
-                            <span class="post-tag">#bagaço de cana-de-açúcar</span>
-                            <span class="post-tag">#clostridium</span>
-                            <span class="post-tag">#fungos</span>
-                            <span class="post-tag">#hidrólise enzimática</span>
-                            <span class="post-tag">#tratamento biológico</span>
-                            <span class="post-tag">#aspergillus niger</span>
-                            <span class="post-tag">#reatores anaeróbios</span>
-                            <span class="post-tag">#fermentação</span>
+                            <span class="post-tag">#humanas</span>
+                            <span class="post-tag">#filosofia</span>
+                            <span class="post-tag">#modernidade</span>
+                            <span class="post-tag">#teoria crítica</span>
                             <br>
                             <br>
                         </div>
