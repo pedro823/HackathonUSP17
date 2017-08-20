@@ -153,7 +153,7 @@
                 <div class='col-md-6' style='text-align: right;'>
                   <p>
                     <b>IC's em progresso:</b> 11<br />
-                    <b>IC's abertas:</b> 12
+                    <b>Satisa:</b> 12
                   </p>
                 </div>
                 <div class='col-md-1'>

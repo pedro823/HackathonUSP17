@@ -32,4 +32,4 @@ grant all privileges on conectoma.* to conectoma2@localhost;
 insert into users(nome, email, senha, tipo, universidade) values("Vilma Leyton", "vilmaleyton@gmail.com","vivilele","pesq","USP");
 insert into users(nome, email, senha, tipo, universidade) values("Manuel Carneiro", "manu@gmail.com","jojocaca","aluno","USP");
 
-insert into posts(titulo,pesquisador,vagas,instituicao,status,dataInicio,dataFim, fomento, requisitos, tags, cidade, area, resumo) values();
+insert into posts(categoria, titulo,pesquisador,vagas,instituicao,status,dataInicio,dataFim, fomento, requisitos, tags, cidade, area, resumo) values();
