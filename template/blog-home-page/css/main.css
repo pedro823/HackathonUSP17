@@ -1,0 +1,90 @@
+.dark-text {
+  color: #3a3a3a;
+}
+
+.centered {
+  text-align: center !important;
+}
+
+.bold {
+  font-weight: bolder !important;
+}
+
+.small {
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.right {
+  text-align: right;
+}
+
+progress {
+  -webkit-appearance: none;
+   appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(top,
+	                           rgba(255, 255, 255, .25),
+	                           rgba(0, 0, 0, .25));
+
+
+    border-radius: 4px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.uni-header {
+  width: 100%;
+  display: block;
+  background-color: #64b5f6;
+  border-bottom: thin dashed #444;
+}
+
+.padding {
+  margin: 1.5em;
+}
+
+
+
+.card-img {
+  object-fit: cover;
+  display: block;
+  padding-bottom: 1em;
+  width: 15em;
+  height: 10em;
+  overflow: hidden;
+}
+
+.card-text {
+  text-align: justify !important;
+}
+
+.uni-icon {
+  padding-top: 0.5em;
+  height: 12em;
+  width: auto;
+  border-radius: 50%;
+  padding-bottom: 0.5em;
+}
+
+.status {
+  text-align: center;
+}
+
+.uni-subtitle {
+  color: #505050;
+}
+
+.uni-title {
+  padding-top: 0.5em;
+  font-size: 300%
+}
