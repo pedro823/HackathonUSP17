@@ -14,7 +14,7 @@
                             <a class="nav-link" href="#">O que é uma IC?</a>
                         </li>
                         <li class="nav-item btn-group">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ranking das Universidades
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ranking
                             </a>
                             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="profile.php">USP</a>
